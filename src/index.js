@@ -81,7 +81,22 @@ function scheduleNextPing() {
 
 // Health check endpoint
 app.get("/ping", (req, res) => {
+  res.send("Ping ✅");
+});
+app.get("/pong", (req, res) => {
   res.send("Pong ✅");
+});
+app.get("/ding", (req, res) => {
+  res.send("Ding ✅");
+});
+app.get("/dong", (req, res) => {
+  res.send("Dong ✅");
+});
+app.get("/ting", (req, res) => {
+  res.send("Ting ✅");
+});
+app.get("/tong", (req, res) => {
+  res.send("Tong ✅");
 });
 
 // Start server
